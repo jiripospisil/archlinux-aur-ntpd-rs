@@ -23,6 +23,7 @@ build() {
 
   export RUSTUP_TOOLCHAIN=stable
   export CARGO_TARGET_DIR=target
+  export CFLAGS+=" -ffat-lto-objects"
   cargo build --release --locked --target "$CARCH-unknown-linux-gnu"
 }
 
