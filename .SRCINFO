@@ -1,12 +1,15 @@
 pkgbase = ntpd-rs
 	pkgdesc = A full-featured implementation of the Network Time Protocol, including NTS support.
 	pkgver = 1.1.2
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/pendulum-project/ntpd-rs
 	changelog = CHANGELOG
 	arch = x86_64
 	license = Apache
 	makedepends = cargo
+	makedepends = git
+	depends = gcc-libs
+	depends = glibc
 	backup = etc/ntpd-rs/ntp.toml
 	source = https://github.com/pendulum-project/ntpd-rs/archive/refs/tags/v1.1.2.tar.gz
 	source = ntpd-rs.service

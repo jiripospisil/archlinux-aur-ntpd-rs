@@ -1,7 +1,7 @@
 # Maintainer: Jiri Pospisil <jiri@jpospisil.com>
 pkgname=ntpd-rs
 pkgver=1.1.2
-pkgrel=1
+pkgrel=2
 pkgdesc='A full-featured implementation of the Network Time Protocol, including NTS support.'
 url='https://github.com/pendulum-project/ntpd-rs'
 arch=('x86_64')
