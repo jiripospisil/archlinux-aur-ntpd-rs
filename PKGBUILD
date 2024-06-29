@@ -1,7 +1,7 @@
 # Maintainer: Jiri Pospisil <jiri@jpospisil.com>
 pkgname=ntpd-rs
-pkgver=1.1.2
-pkgrel=2
+pkgver=1.1.3
+pkgrel=1
 pkgdesc='A full-featured implementation of the Network Time Protocol, including NTS support.'
 url='https://github.com/pendulum-project/ntpd-rs'
 arch=('x86_64')
@@ -14,7 +14,7 @@ source=(
   'ntpd-rs.service'
   'ntpd-rs-metrics.service')
 backup=('etc/ntpd-rs/ntp.toml')
-b2sums=('4e44709d9ced3e44595fffffb8b1085f5e54ee9508b73bc5bb70964bc99634ad57af96af83d427a2d79b5282b53ae00d80c25995b7d7b5e50918993449da29a4'
+b2sums=('c628a6957ce24ff8a683d61e731ec1db6fd7e8bbfd4e8604e79208dd2a1b3dbda3e5aea0051de9d99f9aeac4761ba39ff21475c44b226b0b541367ffeb0b4ed1'
         'b9c730d0e277de99bf7a968cedefce5bd55dfc8587dee2f140a800c0571312dd1789722dceeadd53fc04a684f6c18751106b4242f010e4991afa13f986a7c4be'
         '80355c29433138805efd4acbdb6c684a206afae43f75466d3996c100dea534d099049131279ad8d1e5c80ebaa6792b7101cccad91d085e5630c5356c295a3c22')
 
