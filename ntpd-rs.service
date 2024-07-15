@@ -3,7 +3,7 @@ Description=Network Time Service (ntpd-rs)
 Documentation=https://github.com/pendulum-project/ntpd-rs
 After=network-online.target
 Wants=network-online.target
-Conflicts=systemd-timesyncd.service ntp.service chrony.service
+Conflicts=systemd-timesyncd.service ntpd.service chrony.service openntpd.service
 ConditionCapability=CAP_SYS_TIME
 
 [Service]
