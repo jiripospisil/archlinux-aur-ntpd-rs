@@ -24,12 +24,12 @@ build() {
   export RUSTUP_TOOLCHAIN=stable
   export CARGO_TARGET_DIR=target
   export CFLAGS+=" -ffat-lto-objects"
-  cargo build --release --locked --target "$CARCH-unknown-linux-gnu"
+
+  cargo build --release --locked --target x86_64-unknown-linux-gnu
 }
 
 package() {
-  install -Dm644 ntpd-rs.service "$pkgdir/usr/lib/systemd/system/ntpd-rs.service"
-  install -Dm644 ntpd-rs-metrics.service "$pkgdir/usr/lib/systemd/system/ntpd-rs-metrics.service"
+  install -Dm644 -t "$pkgdir/usr/lib/systemd/system" ntpd-rs.service ntpd-rs-metrics.service
   echo "ntpd-rs.service" | install -Dm 644 /dev/stdin "${pkgdir}/usr/lib/systemd/ntp-units.d/50-ntpd-rs.list"
 
   cd "$pkgname-$pkgver"
