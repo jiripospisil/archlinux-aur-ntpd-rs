@@ -1,7 +1,24 @@
-# Changes in version 1.2.1
+# Changes in version 1.2.2
 
 Changed:
-  - Updated dependencies
+
+- Updated dependencies
+
+Fixed:
+
+- Fixed a bug in network change detection that prevented startup on FreeBSD.
+- Fixed a bug in leap second flag handling where previous flags weren't
+  explicitly unset.
+- Fixed a bug that caused NTS-KE sessions from clients with a large request to
+  hang.
+- Fixed a bug that caused NTS-KE error records never to be sent.
+
+
+# Changes in version 1.2.1 (nuked)
+
+Changed:
+
+- Updated dependencies
 
 Fixed:
 
